@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+   --coleur: #00292B;
+   --coleur1: #003f88;
+   --coleur2: #00509d;
+   --coleur3: #0a0908;
+   --coleur4: #081c15;
+   --coleur5: #03071e;
+   --coleur6: #030d21;
+   --coleur7: #003566;
+   --coleur8: #03045e;
+   --coleur9: #2e294e;
+   --coleur10: #FAF9FB;
+   --primary: #ff7a00;   
+   --secondary: #00c896; 
+   --accent: #00aaff;    
+   --dark: #0f0f0f;
+  --dark-light: #1a1a1a;
+   --primary: #ff7a00;
+    --primary-dark: #e06e00;
+    --primary-light: #fff0e6;
+    --secondary: #00c896;
+    --accent: #00aaff;
+    --dark: #0f0f0f;
+    --dark-light: #1a1a1a;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+    --white: #ffffff;
+    --bg-light: #faf9fb;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.body {
+    min-height: 100vh;
+}
+
+.header{
+    min-height:120vh;
+    background: url("./../Image/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain;
+}
+
+/* formatge de la navbar */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    padding: 0.75rem 0;
+}
+
+.imglogo2{
+    width: 6vw;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand .brand-text {
+    color: var(--text-dark);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary);
+}
+
+.theme-toggle {
+    background: var(--gray-light);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--primary);
+    color: white;
+}
+/* Formatage de la page contact */
+
+.cbody {
+    background-color: var(--coleur10);
+}
+.cdivflex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--coleur6);
+    border-bottom: 1px solid black;
+    backdrop-filter: blur(5px);
+}
+
+.cdivflex > div > ul {
+    display: flex;
+}
+
+.cdivflex > div > ul > li{
+    margin: 30px;
+}
+.cdivflex > div > ul > li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    top: .95em;
+}
+
+.cAppel{
+    color: black;
+    padding: 3em 20em;
+    margin: 4em 0 3em;
+    text-align: center;
+}
+
+.Cmdiv1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 12em;
+    margin: 0 0 2em;
+}
+
+.Cmform{
+    display: grid;
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d d d"
+    "e1 e1 e3 e3"
+    ;
+    gap: 20px;
+}
+
+.Cmform > input{
+    padding: 15px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.347);
+}
+.Cmform > textarea{
+    padding: 15px 10px;
+    resize: none;
+    height: 30vh;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.347);
+    border-radius: 5px;
+}
+.input1{
+    grid-area: a;
+    width: 45vw;
+}
+.input2{
+    grid-area: b;
+}
+.input3{
+    grid-area: c;
+}
+
+.input4{
+    grid-area: e3;
+}
+.ctextarea{
+    grid-area: d;
+
+}
+
+.cbesoin{   
+    height: 10vh;
+    width: 20vw;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.326);
+    border-radius: 10px;
+}
+
+.cbesoin > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    bottom: 1vw;
+}
+
+.cbesoin > p{
+    font-weight: 450;
+} 
+
+/* page tarif */
+
+.main1{
+    text-align: center;
+    padding: 9vw 29vw 4vw;
+    margin-bottom: 5vw;
+}
+
+.part1{
+    display: flex;
+    justify-content:center;
+    gap: 9vw;
+}
+
+/* page about */
+
+.mainabt{
+    min-height: 100vh;
+}
+.abts1{
+    padding: 12vh 0 0;
+}
+.abts11{
+    background: url("./../Image/ntrhist.png");
+    background-position: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.abtds1div1{
+    padding: 10vw 0 5vw;
+    text-align: center;
+}
