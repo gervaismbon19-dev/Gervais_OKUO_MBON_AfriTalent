@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Inder&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/fontbootstrap-icons.min.css">
     <title>A_propos</title>
 </head>
-<body>
+<body class="bodyabout">
     <header>
 
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                 <img class="imglogo2" src="./Image/logo2.png" alt="">
+                    <img class="imglogo2" src="./Image/logo2.png" alt="">
                 </a>
             
-            <div class="collapse navbar-collapse" >
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                </ul>
-                <div class="ms-lg-3 d-flex align-items-center gap-2">
-                    <button class="btn btn-primary rounded-pill px-4">
-                        <i class="bi-person-plus"></i> Rejoindre
-                    </button>
+                <div class="collapse navbar-collapse" >
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="ms-lg-3 d-flex align-items-center gap-2">
+                        <button class="btn btn-primary rounded-pill px-4">
+                            <i class="bi-person-plus"></i> Rejoindre
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
-
-    <main class="mainabt">
-       <section class="abts1">
+        <div class="abts1">   
             <div class="abts11">
                 <div>
                     <div class="abtds1div1">
@@ -47,13 +50,18 @@
                     </p>
                 </div>
             </div>
-       </section>
+            <div class="aboutimg">
+                <img src="./Image/ntrhist.png" alt="" class="rounded-4">
+            </div>
+        </div>
+    </header>
 
+    <main class="mainabt">
        <section>
             <h2>Notre equipe </h2>
-            <div>
+            <div class="flexabout">
                 <div>
-                    <img src="./Image/ea1.png" alt="">
+                    <img src="./Image/ea1.png" alt="" class="imgequipe">
                     <div>
                         <p>Gervais MBON</p>
                         <p>Fondateur & CEO</p>
@@ -61,7 +69,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./Image/eq2.png" alt="">
+                    <img src="./Image/eq2.png" alt="" class="imgequipe">
                     <div> 
                         <p>Melina OKOUO</p>
                         <p>Développeuse Full Stack</p>
@@ -69,7 +77,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./Image/eq3.png" alt="">
+                    <img src="./Image/eq3.png" alt="" class="imgequipe">
                     <div>
                         <p>Herchy IKOUBA</p>
                         <p>UI/UX Designer</p>
@@ -77,7 +85,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./Image/eq4.png" alt="">
+                    <img src="./Image/eq4.png" alt="" class="imgequipe">
                     <div>
                         <p>Nisa KABA</p>
                         <p>Responsable Marketing</p>
@@ -91,25 +99,29 @@
             <h2>Nos valeurs</h2>
             <div>
                 <div>
+                    <img src="./Image/val1.png" alt="" class="rounded-4 val1">
                     <p>Innovation</p>
                     <p>Nous utilisons la technologie pour créer des solutions modernes qui simplifient la collaboration entre talents et entreprises.</p>
                 </div>
                 <div>
+                    <img src="./Image/val2.png" alt="" class="rounded-4 val2">
                     <p>Accessibilité</p>
                     <p>Chez AfriTalent, nous rendons le freelance accessible à tous. Notre plateforme est pensée pour être intuitive, rapide et inclusive, afin que chaque utilisateur puisse l’utiliser facilement, partout et à tout moment.</p>
                 </div>
                 <div>
+                    <img src="./Image/val3.png" alt="" class="rounded-4 val3">
                     <p>Collaboration</p>
                     <p>Nous croyons en la force du travail d’équipe et favorisons les connexions entre freelances et entreprises.</p>
                 </div>
                 <div>
+                    <img src="./Image/val4.png" alt="" class="rounded-4 val4">
                     <p>Confiance</p>
                     <p>Nous construisons une plateforme fiable, sécurisée et transparente pour tous nos utilisateurs.</p>
                 </div>
             </div>
        </section>
        <section>
-           <h2>Chiffres cles</h2>
+           <h2>Chiffres clés</h2>
        </section>
     </main> 
 

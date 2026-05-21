@@ -1,0 +1,136 @@
+:root{
+   --coleur: #00292B;
+   --coleur1: #003f88;
+   --coleur2: #00509d;
+   --coleur3: #0a0908;
+   --coleur4: #081c15;
+   --coleur5: #03071e;
+   --coleur6: #030d21;
+   --coleur7: #003566;
+   --coleur8: #03045e;
+   --coleur9: #2e294e;
+   --coleur10: #FAF9FB;   
+   --secondary: #00c896; 
+   --accent: #00aaff;    
+   --dark: #0f0f0f;
+  --dark-light: #1a1a1a;
+   --primary: #ff7700;
+    --primary-dark: #e06e00;
+    --primary-light: #fff0e6;
+    --secondary: #00c896;
+    --accent: #00aaff;
+    --dark: #0f0f0f;
+    --dark-light: #1a1a1a;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+    --white: #ffffff;
+    --bg-light: #faf9fb;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sech{
+    padding: 13em 0 0;
+}
+
+.sechhero{
+    padding: 0 20em 0 3em;
+    margin-bottom: 2em;
+}
+
+.sechhero h1{
+    color: white ;
+    font-size: 4em;
+    margin-bottom: 1em;
+    
+}
+
+.sechhero h2{
+    color: white ;
+}
+
+.sechcall a{
+    text-decoration: none;
+    /* color: white ; */
+    margin-left: 2em ;
+
+}
+
+.ccm{
+    height: 40em ;
+    padding: 7em 10em 0;
+    margin: 0 0 5em;
+    display: grid;
+    grid-template-areas: 
+    "a1 a1 a1"
+    "b1 b2 b3"
+    "b1 b2 b3"
+    "b1 d2 d2"
+    ;
+}
+
+.g{
+    grid-area: a1;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid red;
+}
+
+.g1{
+    grid-area: b1;
+    border: 1px solid red;
+}
+
+.g2{
+    grid-area: b2;
+    border: 1px solid red;
+}
+.g3{
+    grid-area: b3;
+    border: 1px solid red;
+}
+.g4{
+    grid-area: d2; 
+    text-align: center;
+    border: 1px solid red;
+}
+
+.service{
+   min-height: 40em ;
+   padding: 0 10em;
+   /* margin: 0 0 1em; */
+}
+.service h2{
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.serviceflex{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.service1{
+    align-self: flex-end;
+}
+
+/* temoignage */
+.temoignage{
+    min-height: 70vh;
+    margin: 4em 0 4em;
+    padding: 0 10em;
+}
+
+.temoignage h2{
+    text-align: center;
+    margin: 0 0 2em;
+}
+
+.temflex{
+    display: flex;
+}

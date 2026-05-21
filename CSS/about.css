@@ -1,0 +1,14 @@
+.bodyabout{
+    font-family: "Exo", sans-serif;
+    /* font-family: "Inder", sans-serif; */
+}
+.aboutimg img{
+    width: 50vw;
+}
+
+.imgequipe{
+    height: 70vh;
+}
+.val1, .val2, .val3, .val4{
+    width: 30vw;
+}

@@ -14,13 +14,12 @@
    --coleur7: #003566;
    --coleur8: #03045e;
    --coleur9: #2e294e;
-   --coleur10: #FAF9FB;
-   --primary: #ff7a00;   
+   --coleur10: #FAF9FB;   
    --secondary: #00c896; 
    --accent: #00aaff;    
    --dark: #0f0f0f;
   --dark-light: #1a1a1a;
-   --primary: #ff7a00;
+   --primary: #ff7b00;
     --primary-dark: #e06e00;
     --primary-light: #fff0e6;
     --secondary: #00c896;
@@ -39,16 +38,20 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Page principale */
+
 .body {
     min-height: 100vh;
+    font-family: "Lora", serif;;
 }
 
 .header{
     min-height:120vh;
-    background: url("./../Image/hero.png");
+    background:linear-gradient(to left, rgba(0, 0, 0, 0.277), rgba(0, 0, 0, 0.78)), url("./../Image/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: contain;
+    /* filter: blur(2); */
 }
 
 /* formatge de la navbar */
@@ -100,6 +103,61 @@
 .theme-toggle:hover {
     background: var(--primary);
     color: white;
+}
+
+/* Formatage de la page freelances */
+
+.bobyfree{
+    font-family: "Playfair Display", serif;
+}
+
+.hero{
+    /* background: var(--primary-light, #fff0e6); */
+    color: var(--primary, #ff7a00);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.sect1free{
+    /* background: var(--primary-light, #fff0e6); */
+    padding: 12vw 0 0;
+    height: 40em;
+}
+
+
+.sect2free{
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: 
+    "a1 a2 a3"
+    "b1 b2 b3"
+    "c1 c2 c3"
+    ;
+    gap: 2vw;
+    margin: 0 0 10vw;
+    padding: 0 2vw;
+}
+
+.card1{
+    height: 20vh;
+    width: 30vw;
+    transition: transform .5s;
+    /* text-align: center; */
+}
+
+.card1:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 2px 2px var(--primary);
+    cursor: pointer;
+}
+
+.imgc{
+    position: relative;
+    left: 5vw;
+    width: 18vw;
 }
 /* Formatage de la page contact */
 
@@ -212,16 +270,55 @@
 
 /* page tarif */
 
-.main1{
+.maintaf{
+    min-height: 100vh;
+    margin: 0 0 10vw;
+}
+
+.section1tarif{
     text-align: center;
-    padding: 9vw 29vw 4vw;
-    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 12vw 29vw 3vw;
+    margin:2vw 0 6vw;
+   
+}
+
+.section2tarif{
+    min-height: 65vh;
 }
 
 .part1{
+    padding: 0 5vw;
     display: flex;
-    justify-content:center;
-    gap: 9vw;
+    justify-content: center;
+}
+
+.part1 p{
+    margin: 0.7vw 0;
+    font-size: 14px;
+}
+
+.part1 h2{
+    text-align: center;
+    margin: 0 0 5.5vw;
+}
+
+.taf1, .taf3{
+    background: var(--coleur2);
+    padding: 20px 30px 0;
+    height: 54vh;
+    width: 25vw;
+    position: relative;
+    top: 3vw;
+}
+
+.taf2{
+    background-color: var(--primary);
+    padding: 30px 30px 0;
+    height: 70vh; 
+    width: 28vw;
 }
 
 /* page about */
@@ -230,17 +327,58 @@
     min-height: 100vh;
 }
 .abts1{
-    padding: 12vh 0 0;
+    padding: 10vw 0 0;
+    display: flex;
+    justify-content: space-around;
 }
 .abts11{
-    background: url("./../Image/ntrhist.png");
-    background-position: contain;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
+    height: 85vh;
+    width: 60vh;
 }
 
 .abtds1div1{
     padding: 10vw 0 5vw;
+    text-align: center;
+}
+
+/* Formatage de u footeur */
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    height: 25em;
+    padding: 4em 0 0;
+    color: white;
+    font-size: 1.3em;   
+}
+
+footer h4{
+    color: var(--primary);
+    position: relative;
+    left: 1em;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    transition: .9s;
+}
+.footer a:hover {
+    padding-left: .5em;
+    color: var(--primary);
+}
+
+
+.footer img{
+    /* border-radius: 70px; */
+    position: relative;
+    /* top: 1em; */
+    left: 4em;
+    width: 6em;
+    margin-bottom: 2.5em;
+}
+
+.footer-bottom{
+    position: relative;
+    top: 2em;
     text-align: center;
 }
