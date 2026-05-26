@@ -77,13 +77,16 @@
     color: var(--text-dark);
 }
 
-.nav-link {
+#navbarNav a {
     font-weight: 500;
+    font-size: 1.1em;
     color: var(--text-dark);
-    transition: var(--transition);
+    transition: color .5s;
+    transition: transform .4s;
 }
 
-.nav-link:hover, .nav-link.active {
+#navbarNav a:hover {
+    transform: translateX(3px);
     color: var(--primary);
 }
 
@@ -112,7 +115,6 @@
 }
 
 .hero{
-    /* background: var(--primary-light, #fff0e6); */
     color: var(--primary, #ff7a00);
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
@@ -121,14 +123,14 @@
     margin-bottom: 1.5rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 .sect1free{
-    /* background: var(--primary-light, #fff0e6); */
     padding: 12vw 0 0;
-    height: 40em;
+    min-height: 30em;
 }
 
-
 .sect2free{
+
     display: grid;
     justify-content: space-around;
     grid-template-areas: 
@@ -136,28 +138,45 @@
     "b1 b2 b3"
     "c1 c2 c3"
     ;
-    gap: 2vw;
-    margin: 0 0 10vw;
-    padding: 0 2vw;
+    gap: 2em;
+    margin-bottom: 6em;
+    padding: 0 4em;
 }
 
 .card1{
-    height: 20vh;
-    width: 30vw;
-    transition: transform .5s;
-    /* text-align: center; */
+    padding: 0 2em 2em;
+    height: 4em;
+    transition: transform .6s;
+
 }
 
 .card1:hover{
-    transform: scale(1.02);
+    transform: scale(1.04);
     box-shadow: 0 0 2px 2px var(--primary);
     cursor: pointer;
 }
 
-.imgc{
+.imgfree{
     position: relative;
-    left: 5vw;
-    width: 18vw;
+    top: 5em;
+    left: 1em;
+    width: 5em;
+
+}
+
+.card-titlee{
+    position: relative;
+    left: 5em;
+    width: 9em;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.card-textt{
+    position: relative;
+    left: 8.6em; 
+    width: 8em; 
+    font-family: Arial, Helvetica, sans-serif;  
 }
 /* Formatage de la page contact */
 
@@ -279,7 +298,6 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
     padding: 12vw 29vw 3vw;
     margin:2vw 0 6vw;
    
@@ -302,23 +320,9 @@
 
 .part1 h2{
     text-align: center;
-    margin: 0 0 5.5vw;
-}
-
-.taf1, .taf3{
-    background: var(--coleur2);
-    padding: 20px 30px 0;
-    height: 54vh;
-    width: 25vw;
+    margin: 0 0 5vw;
     position: relative;
-    top: 3vw;
-}
-
-.taf2{
-    background-color: var(--primary);
-    padding: 30px 30px 0;
-    height: 70vh; 
-    width: 28vw;
+    top: 1em;
 }
 
 /* page about */
@@ -341,7 +345,7 @@
     text-align: center;
 }
 
-/* Formatage de u footeur */
+/* Formatage du footeur */
 
 .footer{
     background-color: rgb(0, 0, 0);

@@ -6,9 +6,68 @@
     width: 50vw;
 }
 
+.flexcarou{
+    display: flex;
+    gap: 20px;
+}
+
 .imgequipe{
-    height: 70vh;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 20px;
 }
 .val1, .val2, .val3, .val4{
-    width: 30vw;
+    width: 20vw;
+}
+
+.abtds1div1 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+}
+.section1abt{
+    min-height: 50vh;
+    padding: 0 7em;
+    margin-bottom: 2em;
+}
+
+.section1abt > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 2em;
+    color: var(--primary);
+}
+
+.paraabt{
+    padding:5em 20em 0 5em;
+}
+
+.lig{
+    background: #fff0e6;
+    border-radius: 20px;
+    /* text-align: center; */
+}
+
+.eqp1{
+    padding: 10px;
+    width: 10em;
+
+}
+
+.sectionvaleur {
+    min-width: 50vh;
+}
+
+.sectionvaleur h2{
+    text-align: center;
+    margin: 3em 0 3em;
+    color: var(--primary);
+}
+.gridvaleurs{
+    padding: 0 5em;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    "a1 a2"
+    "b1 b2"
+    ;
 }

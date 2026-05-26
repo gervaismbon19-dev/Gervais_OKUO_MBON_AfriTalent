@@ -1,4 +1,123 @@
+
+:root{
+   --coleur: #00292B;
+   --coleur1: #003f88;
+   --coleur2: #00509d;
+   --coleur3: #0a0908;
+   --coleur4: #081c15;
+   --coleur5: #03071e;
+   --coleur6: #030d21;
+   --coleur7: #003566;
+   --coleur8: #03045e;
+   --coleur9: #2e294e;
+   --coleur10: #FAF9FB;   
+   --secondary: #00c896; 
+   --accent: #00aaff;    
+   --dark: #0f0f0f;
+  --dark-light: #1a1a1a;
+   --primary1: #ff7b00b6;
+   --primary: #ff7b00;
+    --primary-dark: #e06c005b;
+    --primary-light: #fff0e6a6;
+    --secondary: #00c896;
+    --accent: #00aaff;
+    --dark: #0f0f0f;
+    --dark-light: #1a1a1a;
+    --gray: #6c757d;
+    --gray-light: #e9ecef;
+    --white: #ffffff;
+    --bg-light: #faf9fb;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .section2tarif i{
     color: green;
     margin: 0 0.3vw;
 }
+
+.highlight{
+    color: var(--primary);
+}
+
+.lgp{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.taf1, .taf3{
+    background-color: rgba(141, 97, 97, 0.071);
+    padding: 20px 30px 0;
+    height: 54vh;
+    width: 25vw;
+    position: relative;
+    top: 3vw;
+}
+
+.taf1{
+    box-shadow: -3px 4px 2px 1px rgba(0, 0, 0, 0.155);    
+}
+
+.taf3{
+    box-shadow: 3px 4px 2px 1px rgba(0, 0, 0, 0.155);
+}
+
+.taf2{
+    background-color: var(--primary);
+    padding: 30px 30px 0;
+    height: 70vh; 
+    width: 28vw;
+}
+
+
+.tafbtn1{
+    position: relative;
+    top: 5px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: var(--primary1);
+    transition: transform .5s;
+}
+
+
+.tafbtn2{
+    position: relative;
+    top: 12px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: transform .5s;
+}
+
+.tafbtn3{
+    position: relative;
+    top: 12px;
+    background-color: var(--primary1);
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: transform .5s;
+}
+
+.tafbtn1:hover, .tafbtn2:hover, .tafbtn3:hover{
+    transform: translateX(5px);
+}
+
+.part1h21{
+    font-family: 'Exo';
+}
+
+.part1h22{
+    font-family: century;
+}
+
+.part1h23{
+    font-family: "Roboto";
+}
+
+.part1h21 > i, .part1h22>i, .part1h23 >i{
+    color: black;
+}
+
