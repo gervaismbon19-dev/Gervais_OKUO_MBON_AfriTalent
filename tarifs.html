@@ -1,107 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css"> 
-    <link rel="stylesheet" href="./CSS/tarif.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Tarif</title>
+    <meta name="description" content="AfriTalent - Tarifs transparents pour freelances et entreprises. Choisissez le plan adapté à vos besoins.">
+    <title>AfriTalent - Nos Tarifs</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Personnalisé -->
+     <link rel="stylesheet" href="./CSS/tarif.css">
+    <link rel="stylesheet" href="./CSS/pagep.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
-                
-                <a href="index.html">
-                    <img class="imglogo2" src="./Image/logo2.png" alt="">
-                </a>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
-                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                    </ul>
 
-                    <div class="ms-lg-3 d-flex align-items-center gap-2">
-                        <button class="btn btn-primary rounded-pill px-4">
-                            <i class="bi-person-plus"></i> Rejoindre
-                        </button>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo2" src="./Image/logo2.png" alt="">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 d-flex align-items-center gap-2">
+                    <button class="btn btn-primary rounded-pill px-4" onclick="window.location.href='inscription.html'">
+                        <i class="bi bi-person-plus"></i> Rejoindre
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <header class="pricing-hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <span class="pricing-badge">Tarifs transparents</span>
+                    <h1 class="pricing-title">
+                        Un plan adapté à <span class="highlight">vos objectifs</span>
+                    </h1>
+                    <p class="pricing-subtitle">
+                        Que vous soyez freelance débutant, expert confirmé ou entreprise innovante,<br>
+                        nous avons la solution qu'il vous faut.
+                    </p>
+                    <div class="pricing-promise">
+                        <span><i class="bi bi-check-circle-fill"></i> Sans engagement</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Paiement sécurisé</span>
+                        <span><i class="bi bi-check-circle-fill"></i> Annulation à tout moment</span>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
-    <main class="maintaf">
-        <section class="section1tarif">
-            <h2>
-                Vous êtes <span class="highlight">freelance</span> ou <span class="highlight">entreprise</span> ? 
-            </h2>
-            <p class="lgp">Nous avons le plan qu'il vous faut</p>
-            <p>
-                Pas de mauvaises surprises ni de frais cachés. Uniquement des tarifs transparents.
-            </p>
-        </section>
 
-        <section class="section2tarif">
-            <div class="part1">
-                <div class="rounded-start taf1">
-                    <div>
-                        <h2 class="part1h21"><i>Gratuit</i></h2>
-                        <p><i class="fa-solid fa-square-check"></i>100 articles enregistrés par mois</p>
-                        <p><i class="fa-solid fa-square-check"></i>Moins de 5 crédits de points clés par mois</p>
-                        <p><i class="fa-solid fa-square-check"></i>Étiquettes automatiques illimitées</p>
-                        <p><i class="fa-solid fa-square-check"></i>Collections illimitées (privées et publiques)</p>
-                        <p><i class="fa-solid fa-square-check"></i>Notes illimitées</p>
-                        <button class="tafbtn1 border-0">S'inscrire gratuitement</button>
+    <!-- ==================== SECTION PLANS TARIFAIRES ==================== -->
+    <main class="pricing-main">
+        <div class="container">
+            <!-- Titre de section -->
+            <div class="section-header text-center">
+                <h2>Vous êtes freelance ou entreprise ?<br>Nous avons le plan qu'il vous faut</h2>
+                <p>Pas de mauvaises surprises ni de frais cachés. Uniquement des tarifs transparents.</p>
+            </div>
+
+            <!-- Cartes des 3 plans -->
+            <div class="pricing-grid">
+                <!-- Plan Gratuit -->
+                <div class="pricing-card">
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <h3>Gratuit</h3>
+                            <div class="price">
+                                <span class="currency">€</span>
+                                <span class="amount">0</span>
+                                <span class="period">/mois</span>
+                            </div>
+                            <p class="price-description">Idéal pour découvrir la plateforme</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="bi bi-check-lg"></i> 3 missions par mois</li>
+                                <li><i class="bi bi-check-lg"></i> Mise en relation avec entreprises</li>
+                                <li><i class="bi bi-check-lg"></i> Profil freelance basique</li>
+                                <li><i class="bi bi-check-lg"></i> Accès au chat</li>
+                                <li><i class="bi bi-x-lg"></i> Statistiques avancées</li>
+                                <li><i class="bi bi-x-lg"></i> Support prioritaire</li>
+                                <li><i class="bi bi-x-lg"></i> API dédiée</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <button class="btn-pricing btn-outline" onclick="window.location.href='inscription.html'">
+                                S'inscrire gratuitement
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="rounded taf2">
-                    <div>
-                        <h2 class="part1h22"><i>Entreprise</i></h2>
-                        <p></p>
-                        <p>Tout, de pro à pro</p>
-                        <p><i class="fa-solid fa-square-check"></i>10 000 articles enregistrés par mois</p>
-                        <p><i class="fa-solid fa-square-check"></i>Crédits de points clés illimités</p>
-                        <p><i class="fa-solid fa-square-check"></i>Davantage de modèles d'images pour les points clés,sans le logo ni le nom de SaveDay.</p>
-                        <p><i class="fa-solid fa-square-check"></i>Accès anticipé à toutes les fonctionnalités à venir</p>
-                        <p><i class="fa-solid fa-square-check"></i>50 % de réduction pour les étudiants seulement</p>
-                        <button class=" tafbtn2 border-0">Commencez des maintenant</button>
+
+                <!-- Plan Pro (Mis en avant) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">
+                        <i class="bi bi-fire"></i> Populaire
+                    </div>
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <h3>Pro</h3>
+                            <div class="price">
+                                <span class="currency">€</span>
+                                <span class="amount">29</span>
+                                <span class="period">/mois</span>
+                            </div>
+                            <p class="price-description">Le plus choisi par les freelances</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="bi bi-check-lg"></i> Missions illimitées</li>
+                                <li><i class="bi bi-check-lg"></i> Mise en relation prioritaire</li>
+                                <li><i class="bi bi-check-lg"></i> Profil premium + certification</li>
+                                <li><i class="bi bi-check-lg"></i> Statistiques avancées</li>
+                                <li><i class="bi bi-check-lg"></i> Support prioritaire 24h/24</li>
+                                <li><i class="bi bi-check-lg"></i> Accès aux offres exclusives</li>
+                                <li><i class="bi bi-check-lg"></i> API dédiée</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <button class="btn-pricing btn-primary" onclick="window.location.href='inscription.html'">
+                                Commencer maintenant
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="rounded-end taf3">
-                    <div>
-                        <h2 class="part1h23"><i>Pro</i></h2>
-                        <p></p>
-                        <p><i class="fa-solid fa-square-check"></i>Articles sauvegardés illimités</p>
-                        <p><i class="fa-solid fa-square-check"></i>Crédits illimités pour les questions-réponses</p>
-                        <p><i class="fa-solid fa-square-check"></i>Soutien prioritaire</p>
-                        <p><i class="fa-solid fa-square-check"></i>50 % de réduction pour les étudiants seulement</p>
-                        <button class=" tafbtn3 border-0">Commencez des maintenant</button>
+
+                <!-- Plan Entreprise -->
+                <div class="pricing-card">
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <h3>Entreprise</h3>
+                            <div class="price">
+                                <span class="currency">€</span>
+                                <span class="amount">99</span>
+                                <span class="period">/mois</span>
+                            </div>
+                            <p class="price-description">Pour les équipes et entreprises</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="bi bi-check-lg"></i> Comptes illimités</li>
+                                <li><i class="bi bi-check-lg"></i> Recrutement en illimité</li>
+                                <li><i class="bi bi-check-lg"></i> API dédiée</li>
+                                <li><i class="bi bi-check-lg"></i> Support dédié 24h/24</li>
+                                <li><i class="bi bi-check-lg"></i> Tableau de bord personnalisé</li>
+                                <li><i class="bi bi-check-lg"></i> Formation incluse</li>
+                                <li><i class="bi bi-check-lg"></i> Accès prioritaire aux nouveaux talents</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <button class="btn-pricing btn-outline" onclick="window.location.href='contact.html'">
+                                Contacter les ventes
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- ==================== SECTION FAQ (ACCORDION BOOTSTRAP) ==================== -->
+            <div class="faq-section">
+                <div class="section-header text-center">
+                    <span class="faq-badge">Questions fréquentes</span>
+                    <h2>Vous avez des questions ?</h2>
+                    <p>Retrouvez les réponses aux questions les plus posées</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- Question 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="bi bi-question-circle"></i>
+                                    Puis-je changer de plan à tout moment ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, absolument ! Vous pouvez passer d'un plan à un autre à tout moment depuis votre espace client. La facturation sera ajustée automatiquement au prorata de votre période d'abonnement en cours. Aucun frais supplémentaire n'est appliqué.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="bi bi-credit-card"></i>
+                                    Quels sont les moyens de paiement acceptés ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous acceptons toutes les cartes bancaires (Visa, Mastercard, American Express), les paiements par Mobile Money (Orange Money, Wave, Free), et les virements bancaires pour les offres Entreprise. Tous les paiements sont sécurisés.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="bi bi-shield-check"></i>
+                                    Y a-t-il des frais cachés ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Aucun frais caché ! Ce que vous voyez est ce que vous payez. Les tarifs affichés incluent toutes les taxes. La transparence est notre priorité. Vous pouvez annuler à tout moment sans pénalité.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <i class="bi bi-headset"></i>
+                                    Quel type de support est inclus ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Le support est inclus dans tous les plans. Le plan Gratuit bénéficie d'un support par email sous 48h. Le plan Pro a un support prioritaire sous 24h par email et chat. Le plan Entreprise dispose d'un support dédié 24h/24 et 7j/7 par téléphone, email et chat.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    <i class="bi bi-x-circle"></i>
+                                    Puis-je annuler mon abonnement facilement ?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, l'annulation se fait en un clic depuis votre espace client. Aucune justification demandée. Vous continuez à bénéficier du service jusqu'à la fin de la période payée. Aucun remboursement n'est effectué pour la période restante.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    <i class="bi bi-building"></i>
+                                    Y a-t-il une réduction pour les startups et ONG ?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolument ! Nous offrons des réductions spéciales pour les startups en phase d'amorçage ( -30% pendant 6 mois ) et les ONG ( -50% ). Contactez notre équipe commerciale pour en discuter et bénéficier de ces offres.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    <i class="bi bi-graph-up"></i>
+                                    Puis-je passer d'un plan à un autre en cours de mois ?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, vous pouvez changer de plan à tout moment. Le nouveau plan est appliqué immédiatement et la différence de prix est calculée au prorata des jours restants dans le mois. Le paiement est ajusté automatiquement.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-         <!-- footer -->
+    <!-- ==================== BOUTON RETOUR EN HAUT ==================== -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-brand">
-                        <img src="./Image/logofo.png" alt="">
+                        <img src="./Image/logofo.png" alt="" class="logofo">
                         <p>La première plateforme africaine de mise en relation entre freelances tech et entreprises innovantes.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h4>Liens utiles</h4>
-                    <ul type="none">
+                    <ul>
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="freelances.html">Freelances</a></li>
                         <li><a href="tarifs.html">Tarifs</a></li>
@@ -110,7 +329,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h4>Ressources</h4>
-                    <ul  type="none">
+                    <ul>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Support</a></li>
@@ -119,7 +338,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h4>Contact</h4>
-                    <ul class="footer-contact"  type="none">
+                    <ul class="footer-contact">
                         <li><i class="bi bi-envelope"></i> <a href="mailto:contact@afritalent.com">contact@afritalent.com</a></li>
                         <li><i class="bi bi-telephone"></i> <a href="tel:+221778250502">+221 77 825 05 02</a></li>
                         <li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li>
@@ -127,17 +346,19 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; AfriTalent. Tous droits réservés.</p>
+                <p>&copy; <span id="currentYear"></span> AfriTalent. Tous droits réservés.</p>
                 <div class="footer-social">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="./JS/main.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
