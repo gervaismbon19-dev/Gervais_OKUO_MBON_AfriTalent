@@ -204,3 +204,154 @@ function initContactForm() {
         }
     });
 }
+
+      document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const freelanceCards = document.querySelectorAll('.freelance-card');
+            const noResults = document.getElementById('noResults');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            // Nombre de cartes à afficher initialement
+            let visibleCards = 6;
+            
+            // Fonction pour filtrer les cartes
+            function filterCards(category) {
+                let visibleCount = 0;
+                
+                freelanceCards.forEach((card, index) => {
+                    const cardCategory = card.getAttribute('data-category');
+                    
+                    if (category === 'all' || cardCategory === category) {
+                        // Afficher seulement jusqu'à visibleCards
+                        if (index < visibleCards) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeInUp 0.5s ease forwards';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Afficher ou masquer le message "aucun résultat"
+                if (visibleCount === 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+                
+                // Afficher ou masquer le bouton "charger plus"
+                if (loadMoreBtn) {
+                    const totalVisible = Array.from(freelanceCards).filter(card => 
+                        card.style.display === 'block'
+                    ).length;
+                    
+                    if (totalVisible >= freelanceCards.length || totalVisible === 0) {
+                        loadMoreBtn.style.display = 'none';
+                    } else {
+                        loadMoreBtn.style.display = 'inline-block';
+                    }
+                }
+            }
+            
+            // Ajouter les événements aux boutons de filtre
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Retirer la classe active de tous les boutons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    btn.classList.add('active');
+                    
+                    // Récupérer la catégorie
+                    const category = btn.getAttribute('data-category');
+                    
+                    // Réinitialiser le nombre de cartes visibles
+                    visibleCards = 6;
+                    
+                    // Filtrer les cartes
+                    filterCards(category);
+                });
+            });
+            
+            // Bouton "Charger plus"
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', () => {
+                    const activeFilter = document.querySelector('.filter-btn.active');
+                    const currentCategory = activeFilter ? activeFilter.getAttribute('data-category') : 'all';
+                    
+                    // Augmenter le nombre de cartes visibles
+                    visibleCards += 3;
+                    
+                    // Re-filtrer
+                    filterCards(currentCategory);
+                });
+            }
+            
+            // Initialisation : afficher les 6 premières cartes
+            filterCards('all');
+        });
+
+function initContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        let isValid = true;
+        
+        const prenom = document.getElementById('prenom');
+        const nom = document.getElementById('nom');
+        const email = document.getElementById('email');
+        const sujet = document.getElementById('sujet');
+        const message = document.getElementById('message');
+        
+        function showError(field, msg) {
+            const errorDiv = document.getElementById(`${field.id}Error`);
+            if (errorDiv) {
+                errorDiv.textContent = msg;
+                errorDiv.classList.add('show');
+                field.classList.add('error');
+            }
+            isValid = false;
+        }
+        
+        function clearError(field) {
+            const errorDiv = document.getElementById(`${field.id}Error`);
+            if (errorDiv) {
+                errorDiv.textContent = '';
+                errorDiv.classList.remove('show');
+                field.classList.remove('error');
+            }
+        }
+        
+        if (!prenom.value.trim()) showError(prenom, 'Le prénom est requis');
+        else clearError(prenom);
+        
+        if (!nom.value.trim()) showError(nom, 'Le nom est requis');
+        else clearError(nom);
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.value.trim()) showError(email, 'L\'email est requis');
+        else if (!emailRegex.test(email.value)) showError(email, 'Email invalide');
+        else clearError(email);
+        
+        if (!sujet.value) showError(sujet, 'Veuillez sélectionner un sujet');
+        else clearError(sujet);
+        
+        if (!message.value.trim()) showError(message, 'Le message est requis');
+        else if (message.value.length < 20) showError(message, 'Message trop court (minimum 20 caractères)');
+        else clearError(message);
+        
+        if (isValid) {
+            const successMsg = document.getElementById('successMessage');
+            if (successMsg) {
+                successMsg.classList.add('show');
+                form.reset();
+                setTimeout(() => successMsg.classList.remove('show'), 5000);
+            }
+        }
+    });
+}
