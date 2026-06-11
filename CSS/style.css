@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* Foormatage des couleurs predefinies */
 :root{
    --coleur: #00292B;
    --coleur1: #003f88;
@@ -114,6 +114,9 @@
 }
 
 /* Formatage de la page freelances */
+.mainfree{
+    margin-bottom: 2em;
+}
 .freelance-main {
     padding: 4rem 0;
 }
@@ -122,6 +125,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2rem;
+}
+
+.card-content h2{
+    font-size: 1.3em;
+    font-weight: 900;
 }
 
 /* Carte freelance */
@@ -422,74 +430,6 @@
     color: var(--text-muted, #6c757d);
 }
 
-.bobyfree{
-    font-family: "Playfair Display", serif;
-}
-
-.hero{
-    color: var(--primary, #ff7a00);
-    padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.sect1free{
-    padding: 12vw 0 0;
-    min-height: 30em;
-}
-
-.sect2free{
-
-    display: grid;
-    justify-content: space-around;
-    grid-template-areas: 
-    "a1 a2 a3"
-    "b1 b2 b3"
-    "c1 c2 c3"
-    ;
-    gap: 2em;
-    margin-bottom: 6em;
-    padding: 0 4em;
-}
-
-.card1{
-    padding: 0 2em 2em;
-    height: 4em;
-    transition: transform .6s;
-
-}
-
-.card1:hover{
-    transform: scale(1.04);
-    box-shadow: 0 0 2px 2px var(--primary);
-    cursor: pointer;
-}
-
-.imgfree{
-    position: relative;
-    top: 5em;
-    left: 1em;
-    width: 5em;
-
-}
-
-.card-titlee{
-    position: relative;
-    left: 5em;
-    width: 9em;
-    font-weight: 700;
-    font-size: 1.6em;
-}
-
-.card-textt{
-    position: relative;
-    left: 8.6em; 
-    width: 8em; 
-    font-family: Arial, Helvetica, sans-serif;  
-}
 /* Formatage de la page contact */
 
 .cbody {
@@ -670,7 +610,7 @@
     color: black;
 }
 
-/* ==================== BACK TO TOP ==================== */
+/* Retour en haut */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -706,13 +646,16 @@
 
 /* Formatage du footeur */
 
+.h3mdif{
+    font-size: 1.1em;
+}
+
 .footer {
     background: var(--dark);
     color: white;
     padding: 60px 0 20px;
 }
 
-.footer-brand h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 .footer-brand p { color: #aaa; font-size: 0.9rem; }
 
 .footer h4 { font-size: 1rem; margin-bottom: 1rem; position: relative; display: inline-block; }
@@ -763,9 +706,10 @@
 }
 
 
-/* ==================== RESPONSIVE GLOBAL ==================== */
+/* Responsivite */
 
-/* ---------- POINTS DE RUPTURE STANDARDS ---------- */
+/*  POINTS DE RUPTURE STANDARDS  */
+
 /* Grand desktop (1400px+) */
 @media (min-width: 1400px) {
     .container {
