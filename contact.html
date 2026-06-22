@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez AfriTalent - Plateforme de mise en relation entre freelances tech et entreprises en Afrique">
+    <meta name="description"
+        content="Contactez AfriTalent - Plateforme de mise en relation entre freelances tech et entreprises en Afrique">
     <title>AfriTalent - Contactez-nous</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./CSS/contact.css">
     <link rel="stylesheet" href="./CSS/pagep.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-            <img class="logo2" src="./Image/logo2.png" alt="logo navbar">
+                <img class="logo2" src="./Image/logo2.png" alt="logo navbar">
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
@@ -69,57 +75,64 @@
     <main class="contact-main">
         <div class="container">
             <div class="row g-5">
-                
+
                 <!-- Partie gauche -->
                 <div class="col-lg-7">
                     <div class="contact-card">
                         <div class="contact-card-header">
                             <h2><i class="bi bi-chat-dots"></i> Envoyez-nous un message</h2>
-                            <p>Remplissez tous les champs ci-dessous, nous vous répondrons dans les plus brefs délais.</p>
+                            <p>Remplissez tous les champs ci-dessous, nous vous répondrons dans les plus brefs délais.
+                            </p>
                         </div>
-                        
+
                         <form id="contactForm" novalidate>
                             <div class="row g-3">
                                 <!-- Prénom -->
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="prenom" class="form-label">Prénom <span class="required">*</span></label>
+                                        <label for="prenom" class="form-label">Prénom <span
+                                                class="required">*</span></label>
                                         <div class="input-icon-group">
                                             <i class="bi bi-person"></i>
-                                            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                                            <input type="text" class="form-control" id="prenom" name="prenom"
+                                                placeholder="Votre prénom" required>
                                         </div>
                                         <div class="error-message" id="prenomError"></div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Nom -->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="nom" class="form-label">Nom <span class="required">*</span></label>
                                         <div class="input-icon-group">
                                             <i class="bi bi-person-badge"></i>
-                                            <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required>
+                                            <input type="text" class="form-control" id="nom" name="nom"
+                                                placeholder="Votre nom" required>
                                         </div>
                                         <div class="error-message" id="nomError"></div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Email -->
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="email" class="form-label">Adresse email <span class="required">*</span></label>
+                                        <label for="email" class="form-label">Adresse email <span
+                                                class="required">*</span></label>
                                         <div class="input-icon-group">
                                             <i class="bi bi-envelope"></i>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="exemple@email.com" required>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="exemple@email.com" required>
                                         </div>
                                         <div class="error-message" id="emailError"></div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Sujet (menu déroulant) -->
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="sujet" class="form-label">Sujet <span class="required">*</span></label>
+                                        <label for="sujet" class="form-label">Sujet <span
+                                                class="required">*</span></label>
                                         <div class="input-icon-group">
                                             <i class="bi bi-tag"></i>
                                             <select class="form-select" id="sujet" name="sujet" required>
@@ -136,14 +149,17 @@
                                         <div class="error-message" id="sujetError"></div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Message -->
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="message" class="form-label">Message <span class="required">*</span></label>
+                                        <label for="message" class="form-label">Message <span
+                                                class="required">*</span></label>
                                         <div class="input-icon-group">
                                             <i class="bi bi-pencil-square"></i>
-                                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Décrivez votre demande en quelques lignes..." required></textarea>
+                                            <textarea class="form-control" id="message" name="message" rows="5"
+                                                placeholder="Décrivez votre demande en quelques lignes..."
+                                                required></textarea>
                                         </div>
                                         <div class="char-counter">
                                             <i class="bi bi-info-circle"></i>
@@ -152,21 +168,22 @@
                                         <div class="error-message" id="messageError"></div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Bouton d'envoi -->
                                 <div class="col-md-12">
                                     <button type="submit" class="btn-submit" id="submitBtn">
                                         <i class="bi bi-send"></i> Envoyer le message
                                     </button>
                                 </div>
-                                
+
                                 <!-- Message de succès -->
                                 <div class="col-md-12">
                                     <div class="success-message" id="successMessage">
                                         <i class="bi bi-check-circle-fill"></i>
                                         <div>
                                             <strong>Message envoyé !</strong>
-                                            <p>Merci ! Votre message a bien été envoyé. Nous vous répondrons sous 24h.</p>
+                                            <p>Merci ! Votre message a bien été envoyé. Nous vous répondrons sous 24h.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -174,14 +191,14 @@
                         </form>
                     </div>
                 </div>
-                
+
                 <!-- Partie drooite -->
                 <div class="col-lg-5">
                     <!-- Informations de contact -->
                     <div class="contact-info-card">
                         <h2><i class="bi bi-info-circle"></i> Informations de contact</h2>
                         <p>Plusieurs moyens de nous joindre</p>
-                        
+
                         <div class="info-list">
                             <div class="info-item">
                                 <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
@@ -191,7 +208,7 @@
                                     <p>Réponse sous 24h ouvrées</p>
                                 </div>
                             </div>
-                            
+
                             <div class="info-item">
                                 <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
                                 <div class="info-content">
@@ -200,7 +217,7 @@
                                     <p>Lun-Ven, 9h-18h GMT</p>
                                 </div>
                             </div>
-                            
+
                             <div class="info-item">
                                 <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
                                 <div class="info-content">
@@ -209,7 +226,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="social-contact">
                             <h3>Suivez-nous</h3>
                             <div class="social-links">
@@ -220,18 +237,14 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Carte Google Maps -->
                     <div class="map-card">
                         <h3><i class="bi bi-map"></i> Notre localisation</h3>
                         <div class="map-container">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.579081666103!2d-17.444788!3d14.715159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172b9e2ccd951%3A0x6b3f5e8c8f2b3a4d!2sDakar%2C%20Senegal!5e0!3m2!1sfr!2ssn!4v1700000000000!5m2!1sfr!2ssn" 
-                                width="100" 
-                                height="250" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.579081666103!2d-17.444788!3d14.715159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172b9e2ccd951%3A0x6b3f5e8c8f2b3a4d!2sDakar%2C%20Senegal!5e0!3m2!1sfr!2ssn!4v1700000000000!5m2!1sfr!2ssn"
+                                width="100" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
                                 title="Carte de localisation d'AfriTalent à Dakar, Sénégal">
                             </iframe>
@@ -254,7 +267,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-brand">
                         <img class="logofo" src="./Image/logofo.png" alt="logo footer">
-                        <p>La première plateforme africaine de mise en relation entre freelances tech et entreprises innovantes.</p>
+                        <p>La première plateforme africaine de mise en relation entre freelances tech et entreprises
+                            innovantes.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
@@ -278,7 +292,8 @@
                 <div class="col-lg-4 col-md-6">
                     <h4>Contact</h4>
                     <ul class="footer-contact">
-                        <li><i class="bi bi-envelope"></i> <a href="mailto:contact@afritalent.com">contact@afritalent.com</a></li>
+                        <li><i class="bi bi-envelope"></i> <a
+                                href="mailto:contact@afritalent.com">contact@afritalent.com</a></li>
                         <li><i class="bi bi-telephone"></i> <a href="tel:+221778250502">+221 77 825 05 02</a></li>
                         <li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li>
                     </ul>
@@ -299,22 +314,22 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
-    
+
     <!-- Script spécifique pour la page contact -->
     <script>
         // ==================== VALIDATION DU FORMULAIRE DE CONTACT ====================
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const contactForm = document.getElementById('contactForm');
             const successMessage = document.getElementById('successMessage');
             const charCountSpan = document.getElementById('charCount');
             const messageField = document.getElementById('message');
-            
+
             // Compteur de caractères pour le message
             if (messageField && charCountSpan) {
-                messageField.addEventListener('input', function() {
+                messageField.addEventListener('input', function () {
                     const length = this.value.length;
                     charCountSpan.textContent = length;
-                    
+
                     if (length >= 20) {
                         charCountSpan.style.color = '#00c853';
                     } else {
@@ -322,21 +337,21 @@
                     }
                 });
             }
-            
+
             // Validation du formulaire
             if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
+                contactForm.addEventListener('submit', function (e) {
                     e.preventDefault();
-                    
+
                     let isValid = true;
-                    
+
                     // Récupération des champs
                     const prenom = document.getElementById('prenom');
                     const nom = document.getElementById('nom');
                     const email = document.getElementById('email');
                     const sujet = document.getElementById('sujet');
                     const message = document.getElementById('message');
-                    
+
                     // Fonction pour afficher une erreur
                     function showError(field, msg) {
                         const errorDiv = document.getElementById(`${field.id}Error`);
@@ -347,7 +362,7 @@
                         }
                         isValid = false;
                     }
-                    
+
                     // Fonction pour effacer une erreur
                     function clearError(field) {
                         const errorDiv = document.getElementById(`${field.id}Error`);
@@ -357,7 +372,7 @@
                             field.classList.remove('error');
                         }
                     }
-                    
+
                     // Validation Prénom
                     if (!prenom.value.trim()) {
                         showError(prenom, 'Le prénom est requis');
@@ -366,7 +381,7 @@
                     } else {
                         clearError(prenom);
                     }
-                    
+
                     // Validation Nom
                     if (!nom.value.trim()) {
                         showError(nom, 'Le nom est requis');
@@ -375,7 +390,7 @@
                     } else {
                         clearError(nom);
                     }
-                    
+
                     // Validation Email (regex)
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     if (!email.value.trim()) {
@@ -385,14 +400,14 @@
                     } else {
                         clearError(email);
                     }
-                    
+
                     // Validation Sujet
                     if (!sujet.value) {
                         showError(sujet, 'Veuillez sélectionner un sujet');
                     } else {
                         clearError(sujet);
                     }
-                    
+
                     // Validation Message (minimum 20 caractères)
                     if (!message.value.trim()) {
                         showError(message, 'Le message est requis');
@@ -401,37 +416,37 @@
                     } else {
                         clearError(message);
                     }
-                    
+
                     // Si tout est valide, afficher le message de succès
                     if (isValid) {
                         // Afficher le message de succès
                         successMessage.classList.add('show');
-                        
+
                         // Réinitialiser le formulaire
                         contactForm.reset();
-                        
+
                         // Réinitialiser le compteur de caractères
                         if (charCountSpan) charCountSpan.textContent = '0';
-                        
+
                         // Masquer le message de succès après 5 secondes
                         setTimeout(() => {
                             successMessage.classList.remove('show');
                         }, 5000);
-                        
+
                         // Ici, vous pourriez ajouter un appel AJAX pour envoyer les données
                         console.log('Formulaire envoyé avec succès !');
                     }
                 });
             }
-            
+
             // Animation au scroll pour les cartes
             const contactCards = document.querySelectorAll('.contact-card, .contact-info-card, .map-card');
-            
+
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
-            
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -441,7 +456,7 @@
                     }
                 });
             }, observerOptions);
-            
+
             contactCards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
@@ -451,4 +466,5 @@
         });
     </script>
 </body>
+
 </html>
